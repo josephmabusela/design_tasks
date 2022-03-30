@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +9,67 @@
     <title>Email design</title>
 
 </head>
+
 <body>
-    
-    <div id="overlay">
 
-        <form onsubmit="event.preventDefault(); validateForm()">
-            <h1>Contact Us!</h1>
+    <div class="flex-container">
 
-            
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Government or prefared name accepted here">
-            <small class="error"></small>
-            
-            <label for="name">Email:</label>
-            <input type="text" id="email" placeholder="Valid email required*">
-            <small class="error"></small>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" placeholder="Detailed message description required*" rows="6"></textarea>
-            <small class="error"></small>
+        <div class="content">
+            <h1>Network Detection And Response: Cloud Security’s Missing Link</h1>
 
-            <div class="center">
-                <input type="submit" value="Send Message">
-                <p id="sucess"></p>
-            </div>
+            <p>Complex configurations don't mix well with rapidly spun-up components, and when your company uses
+                multiple cloud providers to host your critical assets, the odds of a major security event get that much
+                higher.
+            </p>
+
+            <p>
+                So, how do you close visibility gaps and integrate conflicting datasets from different providers, and
+                how
+                do you adjust your current incident response strategies to respond to cloud-specific threats?
+            </p>
+            <p>
+                Read the report from SANS Instructor Dave Shackleford to learn how your peers across tech, finance,
+                cybersecurity, and other industries address the following questions and more:
+            </p>
+
+            <ul>
+                <li>What's the most dangerous cloud security vulnerability that you might think is only hype?</li>
+                <li>What are the biggest challenges in adapting IR and forensics analysis to the cloud?</li>
+                <li>What are the most effective security controls for the cloud, and how can you avoid common
+                    implementation roadblocks?</li>
+            </ul>
+            <h2>CTA download: <a href="/Network Detection and Response Cloud Security's Missing Link (1).pdf">Now</a>
+            </h2>
             <h2>Offered on behalf ExtraHop Networks</h2>
-            <p>If you'd prefer not to receive future messages, you can unsubscribe here: <a href="#">Unsubscribe</a>.<br/>
-            424 Washington St, #35091, Brighton, MA 02135.</p>
-        </form>
-    </div>
+            <p>If you'd prefer not to receive future messages, you can unsubscribe here: 
+                <a href="#">Unsubscribe</a>.<br />
+                424 Washington St, #35091, Brighton, MA 02135.
+            </p>
+        </div>
 
+        <div id="overlay">
+            <form onsubmit="event.preventDefault(); validateForm()">
+                <h1>Contact Us!</h1>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Government or prefared name accepted here">
+                <small class="error"></small>
+
+                <label for="name">Email:</label>
+                <input type="text" id="email" placeholder="Valid email required*">
+                <small class="error"></small>
+
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Detailed message description required*" rows="6"></textarea>
+                <small class="error"></small>
+
+                <div class="center">
+                    <input type="submit" value="Send Message">
+                    <p id="sucess"></p>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
