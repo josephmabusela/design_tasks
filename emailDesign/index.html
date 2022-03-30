@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Email design</title>
+
+</head>
+<body>
+    
+    <div id="overlay">
+
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Contact Us!</h1>
+
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Government or prefared name accepted here">
+            <small class="error"></small>
+            
+            <label for="name">Email:</label>
+            <input type="text" id="email" placeholder="Valid email required*">
+            <small class="error"></small>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Detailed message description required*" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="sucess"></p>
+            </div>
+            <h2>Offered on behalf ExtraHop Networks</h2>
+            <p>If you'd prefer not to receive future messages, you can unsubscribe here: <a href="#">Unsubscribe</a>.<br/>
+            424 Washington St, #35091, Brighton, MA 02135.</p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
