@@ -1,70 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Email design</title>
-
 </head>
 
 <body>
+    <header class="showcase">
+        <h1>Network Detection And Response: Cloud Security’sMissing Link</h1>
+    </header>
 
-    <div class="flex-container">
-        <div class="content">
-            <h1>Network Detection And Response: Cloud Security’s Missing Link</h1>
-
+    <!-- About -->
+    <section class="about bg-light">
+        <div class="grid">
+            <h3>About Us</h3>
             <p>Complex configurations don't mix well with rapidly spun-up components, and when your company uses
-                multiple cloud providers to host your critical assets, the odds of a major security event get that much
+                multiple cloud providers to host your critical assets, the odds of a major security event get
+                that much
                 higher.
             </p>
-            <p>
-                So, how do you close visibility gaps and integrate conflicting datasets from different providers, and
-                how
+            <p>So, how do you close visibility gaps and integrate conflicting datasets from different providers,
+                and how
                 do you adjust your current incident response strategies to respond to cloud-specific threats?
             </p>
             <p>
-                Read the report from SANS Instructor Dave Shackleford to learn how your peers across tech, finance,
+                Read the report from SANS Instructor Dave Shackleford to learn how your peers across tech,
+                finance,
                 cybersecurity, and other industries address the following questions and more:
             </p>
-            <ul>
-                <li>What's the most dangerous cloud security vulnerability that you might think is only hype?</li>
-                <li>What are the biggest challenges in adapting IR and forensics analysis to the cloud?</li>
-                <li>What are the most effective security controls for the cloud, and how can you avoid common
-                    implementation roadblocks?</li>
-            </ul>
-            <h2>CTA download: <a href="/Network Detection and Response Cloud Security's Missing Link (1).pdf">Now</a>
-            </h2>
-            <h2>Offered on behalf ExtraHop Networks</h2>
-            <p>If you'd prefer not to receive future messages, you can unsubscribe here: 
-                <a href="#">Unsubscribe</a>.<br />
-                424 Washington St, #35091, Brighton, MA 02135.
+            <p>What's the most dangerous cloud security vulnerability that you might think is only hype?</p>
+            <p>What are the biggest challenges in adapting IR and forensics analysis to the cloud?</p>
+            <p>What are the most effective security controls for the cloud, and how can you avoid common
+                implementation roadblocks?
             </p>
+            <div class="center">
+                <i class="fa-solid fa-file-pdf"></i>
+                <a href="./Network Detection and Response Cloud Security's Missing Link (1).pdf">Download Now</a>
+            </div>
         </div>
-        <div id="overlay">
-            <form onsubmit="event.preventDefault(); validateForm()">
-                <h1>Contact Us!</h1>
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Government or prefared name accepted here">
-                <small class="error"></small>
+    </section>
 
-                <label for="name">Email:</label>
-                <input type="text" id="email" placeholder="Valid email required*">
-                <small class="error"></small>
+    <footer class="center bg-dark">
+        <p>Traversy Media &copy; 2018</p>
+        <p>Offered on behalf ExtraHop Networks</p>
+        <p>If you'd prefer not to receive future messages, you can <a href="#">Unsubscribe here.</a></p>
+        <p>424 Washington St, #35091, Brighton, MA 02135.</p>
+    </footer>\
 
-                <label for="message">Message:</label>
-                <textarea id="message" placeholder="Detailed message description required*" rows="6"></textarea>
-                <small class="error"></small>
-
-                <div class="center">
-                    <input type="submit" value="Send Message">
-                    <p id="sucess"></p>
-                </div>
-            </form>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b049eba7ef.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

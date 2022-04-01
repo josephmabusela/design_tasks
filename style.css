@@ -51,7 +51,7 @@
   }
   
   .menu li:hover {
-    background-color: #0099cc;
+    background-color: lightgray;
   }
 
 .menu a {
@@ -71,7 +71,7 @@
   }
   
   .menu a:active {
-    background-color: lightgray;
+    background-color: #111;
   } 
   /* For mobile phones: */
 [class*="col-"] {
@@ -109,3 +109,4 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   }
+  
