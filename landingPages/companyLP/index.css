@@ -12,6 +12,28 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -27,13 +49,14 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #D3D3D3;
+  color: #ccc;
   padding: 20px;
 }
 
 section {
     font-weight: 100;
-    background: #eee;
+    background: #001314;
     width: 95%;
     margin: 1em auto;
     position: relative;
@@ -51,7 +74,7 @@ a:hover {
 
 h1, h2 {
     font-size: 2rem;
-    color: #50C878;
+    color: #04AA6D;
     width: auto;
     margin: auto;
     text-align: center;
@@ -59,7 +82,7 @@ h1, h2 {
 }
 
 h3 {
-    color: #001314;
+    color: #50C878;
     padding-bottom: 20px;
     font-weight: 100;
     width: 98%;
@@ -72,5 +95,5 @@ p {
     padding-bottom: 10px;
     font-weight: 100;
     text-align: center;
-    color: #001314;
+    color: #D3D3D3;
 }
