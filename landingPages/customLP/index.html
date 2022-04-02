@@ -1,105 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mountain Travel</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/simple-grid.css">
+    <title>Company Landing Page</title>
 </head>
+
 <body>
-    <header>
-        <h2><a href="#">Mountain Travel</a></h2>
-        <nav>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </nav>
-    </header>
+    <main>
+        <header>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Network Detection And Response: Cloud Security’s Missing Link</h2>
+                </div>
+            </div>
+        </header>
 
-    <section class="hero">
-        <div class="background-image" style="background-image: url(assets/img/main.jpg);"></div>
-        <div class="hero-content-area">
-            <h1>Mountain Travel</h1>
-            <h3>Unmissable Adventure Tours Around The World</h3>
-            <a href="#" class="btn">Contact</a>
-        </div>
-    </section>
+        <section class="email-content">
+            <div class="row">
+                <div class="col-12">
+                    <h2>About us</h2>
+                    <p>Complex configurations don't mix well with rapidly spun-up components, and when your company uses
+                        multiple cloud providers to host your critical assets, the odds of a major security event get
+                        that much
+                        higher.
+                    </p>
+                    <p>So, how do you close visibility gaps and integrate conflicting datasets from different providers,
+                        and how
+                        do you adjust your current incident response strategies to respond to cloud-specific threats?
+                    </p>
+                    <p>
+                        Read the report from SANS Instructor Dave Shackleford to learn how your peers across tech,
+                        finance, cybersecurity, and other industries address the following questions and more:
+                    </p>
+                    <p>What's the most dangerous cloud security vulnerability that you might think is only hype?</p>
+                    <p>What are the biggest challenges in adapting IR and forensics analysis to the cloud?</p>
+                    <p>What are the most effective security controls for the cloud, and how can you avoid common
+                        implementation roadblocks?
+                    </p>
 
-    <section class="destinations">
-        <h3 class="title">Some of our destinations</h3>
-        <p>Tired of the ocean? Are the plains too plain? Come along with us on one of our mountain adventures. Here are some pictures from people who have had elevated experiences with us.</p>
-        <hr>
+                <h3>Complete this form to download the report</h3>
 
-        <ul class="grid">
-            <li class="small" style="background-image: url(assets/img/mountain1.jpg);"></li>
-            <li class="large" style="background-image: url(assets/img/mountain2.jpg);"></li>
-            <li class="large" style="background-image: url(assets/img/mountain3.jpg);"></li>
-            <li class="small" style="background-image: url(assets/img/mountain4.jpg);"></li>
-        </ul>
-    </section>
+                    <div class="container">
+                        <form action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <section class="packages">
-        <h3 class="title">Tour Packages</h3>
-        <p>We offer a variety of mountaineering packages. Whether you've climbed Everest or don't even know what a mountain is, we've got the perfect vacation for you.</p>
-        <hr>
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-        <ul class="grid">
-            <li>
-                <i class="fa fa-compass fa-4x"></i>
-                <h4>Guided Trips</h4>
-                <p>Looking for the complete experience? Take a tour with one of our experts. They'll show you secrets that you're likely to miss otherwise.</p>
-            </li>
-            <li>
-                <i class="fa fa-camera-retro fa-4x"></i>
-                <h4>Photo Trips</h4>
-                <p>Want to experience nature's beauty without all of that annoying exercise? Take a photo tour on one of our mountain buses.</p>
-            </li>
-            <li>
-                <i class="fa fa-bicycle fa-4x"></i>
-                <h4>Bicycle Trips</h4>
-                <p>If bicycles are more your speed, consider taking a tour through one of our mountain bike paths. We'll provide the bikes, and lunch too!</p>
-            </li>
-            <li>
-                <i class="fa fa-flag-checkered fa-4x"></i>
-                <h4>Racing Trips</h4>
-                <p>Got a competitive spirit? Sign up for one of our mountain marathons! Try to reach the summit before anyone else.</p>
-            </li>
-        </ul>
-    </section>
+                            <label for="email">email</label>
+                            <input type="text" id="email" name="email" placeholder="Enter email address..">
 
-    <section class="testimonials">
-        <h3 class="title">Testimonials from our adventures:</h3>
-        <hr>
-        <p class="quote">Wow! This tour made me realize how much I love mountains. After going on one of these tours, I can safely say that they are my favorite geographic feature, and my favorite word that starts with M.</p>
-        <p class="author">- Colt Steele</p>
-        <p class="quote">I never understood why people cared so much about mountains. But then I went on one of these tours. Now I can't understand people who <em>don't</em> care about mountains!</p>
-        <p class="author">- Elie Schoppik</p>
-        <p class="quote">If you want to understand the universe, head to the mountains. I mean, seriously. It's like, woah. You know? It's like that.</p>
-        <p class="author">- Tim Garcia</p>
-    </section>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Mobile number..">
 
-    <section class="contact">
-        <h3 class="title">Learn More</h3>
-        <p>Want to know about our upcoming mountain-related events, or come to one of our mixers? Just sign up for our mailing list. No spam from us, we promise! Except for the spam we give you to keep up your energy while you're hiking through the mountains. We have tons of that/</p>
-        <hr>
-        <form>
-            <input type="email" placeholder="e-mail">
-            <a href="#" class="btn">Subscribe now</a>
-        </form>
-    </section>
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="Enter address..">
 
-    <footer>
-        <p>Images courtesy of <a href="https://unsplash.com">unsplash</a></p>
-        <p>Why are you even reading this?! There's never anything interesting in the footer!</p>
-        <ul>
-            <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
-        </ul>
-    </footer>
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="Enter city..">
 
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="Your state..">
+
+                            <label for="zip">Zip code</label>
+                            <input type="number" id="zip" name="zip" placeholder="Your zip code..">
+
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="southAfrica">South Africa</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your company..">
+
+                            <label for="job">Job Title</label>
+                            <input type="text" id="job" name="job" placeholder="Enter role">
+
+                            <label for="size">Company Size</label>
+                            <select name="size" id="size">
+                                <option value="none">Unemployed</option>
+                                <option value="range">1-10</option>
+                                <option value="range">10+</option>
+                            </select>
+
+                            <label for="industry">Industry</label>
+                            <select id="industry" name="industry">
+                                <option value="unemployed">Unemployed</option>
+                                <option value="tech">Tech</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                            <input type="submit" value="Submit">
+                        </form>
+
+                        <h3><a href="./Network Detection and Response Cloud Security's Missing Link (1).pdf">Download
+                            Now
+                        </a>
+                    </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="row">
+                <div class="col-12">
+                    <footer>
+                        <p>Offered on behalf ExtraHop Networks</p>
+                        <p>If you'd prefer not to receive future messages, you can <a href="#">unsubscribe here.</a></p>
+                        <p>424 Washington St, #35091, Brighton, MA 02135.</p>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

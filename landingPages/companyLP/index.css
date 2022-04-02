@@ -1,6 +1,76 @@
-body {
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: bisque;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+section {
+    font-weight: 100;
+    background: #eee;
+    width: 95%;
+    margin: 1em auto;
+    position: relative;
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+    background-color: #D3D3D3;
+}
+
+a:hover {
+    color: #50C878;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    color: #50C878;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-weight: 100 !important;
+}
+
+h3 {
+    color: #001314;
+    padding-bottom: 20px;
+    font-weight: 100;
+    width: 98%;
+    text-align: center;
+    color: #50C878;
+    padding: 10px 0;
+}
+
+p {
+    padding-bottom: 10px;
+    font-weight: 100;
+    text-align: center;
+    color: #001314;
 }
