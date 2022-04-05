@@ -1,7 +1,113 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+/* CSS Variables*/
 
-input[type=text], select, textarea {
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background-color: #ccc;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+.btn {
+  color: var(--light);
+  background: var(--dark);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/*Navigation*/
+
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/* Top Container */
+
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+}
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+.top-box {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5re;
+}
+
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 3rem;
+}
+
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -12,7 +118,9 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=number], select, textarea {
+input[type="number"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -23,7 +131,9 @@ input[type=number], select, textarea {
   resize: vertical;
 }
 
-input[type=tel], select, textarea {
+input[type="tel"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -34,8 +144,8 @@ input[type=tel], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -43,56 +153,50 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+footer {
+  margin-top: 2rem;
+  background: var(--primary);
+  color: var(--dark);
+  text-align: center;
+  padding: 1rem;
 }
 
-section {
-    font-weight: 100;
-    background: #eee;
-    width: 95%;
-    margin: 1em auto;
-    position: relative;
-    padding: 2em;
-}
+/* Media Queries */
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      "showcase showcase"
+      "top-box-a top-box-b";
+  }
 
-a {
-    text-decoration: none;
-    background-color: #D3D3D3;
-}
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
 
-a:hover {
-    color: #50C878;
-}
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
 
-h1, h2 {
-    font-size: 2rem;
-    color: #50C878;
-    width: auto;
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    display: block;
+    text-align: center;
     margin: auto;
-    text-align: center;
-    font-weight: 100 !important;
+  }
 }
 
-h3 {
-    color: #001314;
-    padding-bottom: 20px;
-    font-weight: 100;
-    width: 98%;
-    text-align: center;
-    color: #50C878;
-    padding: 10px 0;
-}
-
-p {
-    padding-bottom: 10px;
-    font-weight: 100;
-    text-align: center;
-    color: #001314;
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      "showcase"
+      "top-box-a"
+      "top-box-b";
+  }
 }

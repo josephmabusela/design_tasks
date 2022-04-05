@@ -1,128 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Grid Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Nav bar-->
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">My work</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="/css/simple-grid.css">
-    <title>Custom Landing Page</title>
-</head>
+      <!--Top container-->
 
-<body>
-    <main>
-        <header>
-            <div class="row">
-                <div class="col-12">
-                    <h2>Network Detection And Response: Cloud Security’s Missing Link</h2>
-                </div>
-            </div>
+      <section class="top-container">
+        <header class="showcase">
+          <h1>Network Detection And Response: Cloud Security’s Missing Link</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            dolorem rem, eveniet nisi mollitia sed reprehenderit necessitatibus
+            placeat perferendis saepe temporibus architecto assumenda quod natus
+            odit inventore excepturi earum ipsum error illo? Aliquid magni
+            fugiat facere, rerum provident ea dolorem!
+          </p>
+          <a href="#" class="btn"> Read More...</a>
         </header>
+        <div class="top-box top-box-a">
+          <h4>Memebership</h4>
+          <p class="price">R200</p>
+          <a class="btn" href="">Buy now</a>
+        </div>
+        <div class="top-box top-box-b">
+          <h4>Pro Memebership</h4>
+          <p class="price">R350</p>
+          <a class="btn" href="">Buy now</a>
+        </div>
+      </section>
 
-        <section class="email-content">
-            <div class="row">
-                <div class="col-12">
-                    <h2>About us</h2>
-                    <p>Complex configurations don't mix well with rapidly spun-up components, and when your company uses
-                        multiple cloud providers to host your critical assets, the odds of a major security event get
-                        that much
-                        higher.
-                    </p>
-                    <p>So, how do you close visibility gaps and integrate conflicting datasets from different providers,
-                        and how
-                        do you adjust your current incident response strategies to respond to cloud-specific threats?
-                    </p>
-                    <p>
-                        Read the report from SANS Instructor Dave Shackleford to learn how your peers across tech,
-                        finance, cybersecurity, and other industries address the following questions and more:
-                    </p>
-                    <p>What's the most dangerous cloud security vulnerability that you might think is only hype?</p>
-                    <p>What are the biggest challenges in adapting IR and forensics analysis to the cloud?</p>
-                    <p>What are the most effective security controls for the cloud, and how can you avoid common
-                        implementation roadblocks?
-                    </p>
+      <!--Info section-->
+      <section class="info">
+        <p>
+          Complex configurations don't mix well with rapidly spun-up components,
+          and when your company uses multiple cloud providers to host your
+          critical assets, the odds of a major security event get that much
+          higher.
+        </p>
+        <p>
+          So, how do you close visibility gaps and integrate conflicting
+          datasets from different providers, and how do you adjust your current
+          incident response strategies to respond to cloud-specific threats?
+        </p>
+        <p>
+          Read the report from SANS Instructor Dave Shackleford to learn how
+          your peers across tech, finance, cybersecurity, and other industries
+          address the following questions and more:
+        </p>
+        <ul>
+          <li>
+            What's the most dangerous cloud security vulnerability that you
+            might think is only hype?
+          </li>
+          <li>
+            What are the biggest challenges in adapting IR and forensics
+            analysis to the cloud?
+          </li>
+          <li>
+            What are the most effective security controls for the cloud, and how
+            can you avoid common implementation roadblocks?
+          </li>
+        </ul>
+      </section>
 
-                <h3>Complete this form to download the report</h3>
+      <!--Form section-->
 
-                    <div class="container">
-                        <form action="/action_page.php">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <section class="form">
+        <form action="">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
 
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
 
-                            <label for="email">email</label>
-                            <input type="text" id="email" name="email" placeholder="Enter email address..">
+          <label for="email">email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter email address.."
+          />
 
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Mobile number..">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Mobile number.."
+          />
 
-                            <label for="address">Address</label>
-                            <input type="text" id="address" name="address" placeholder="Enter address..">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter address.."
+          />
 
-                            <label for="city">City</label>
-                            <input type="text" id="city" name="city" placeholder="Enter city..">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="Enter city.." />
 
-                            <label for="state">State</label>
-                            <input type="text" id="state" name="state" placeholder="Your state..">
+          <label for="state">State</label>
+          <input
+            type="text"
+            id="state"
+            name="state"
+            placeholder="Your state.."
+          />
 
-                            <label for="zip">Zip code</label>
-                            <input type="number" id="zip" name="zip" placeholder="Your zip code..">
+          <label for="zip">Zip code</label>
+          <input
+            type="number"
+            id="zip"
+            name="zip"
+            placeholder="Your zip code.."
+          />
 
-                            <label for="country">Country</label>
-                            <select id="country" name="country">
-                                <option value="southAfrica">South Africa</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
-                            </select>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="southAfrica">South Africa</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
 
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" placeholder="Your company..">
+          <label for="company">Company</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            placeholder="Your company.."
+          />
 
-                            <label for="job">Job Title</label>
-                            <input type="text" id="job" name="job" placeholder="Enter role">
+          <label for="job">Job Title</label>
+          <input type="text" id="job" name="job" placeholder="Enter role" />
 
-                            <label for="size">Company Size</label>
-                            <select name="size" id="size">
-                                <option value="none">Unemployed</option>
-                                <option value="range">1-10</option>
-                                <option value="range">10+</option>
-                            </select>
+          <label for="size">Company Size</label>
+          <select name="size" id="size">
+            <option value="none">Unemployed</option>
+            <option value="range">1-10</option>
+            <option value="range">10+</option>
+          </select>
 
-                            <label for="industry">Industry</label>
-                            <select id="industry" name="industry">
-                                <option value="unemployed">Unemployed</option>
-                                <option value="tech">Tech</option>
-                                <option value="other">Other</option>
-                            </select>
+          <label for="industry">Industry</label>
+          <select id="industry" name="industry">
+            <option value="unemployed">Unemployed</option>
+            <option value="tech">Tech</option>
+            <option value="other">Other</option>
+          </select>
 
-                            <input type="submit" value="Submit">
-                        </form>
+          <input type="submit" value="Submit" />
+        </form>
 
-                        <h3><a href="./Network Detection and Response Cloud Security's Missing Link (1).pdf">Download
-                            Now
-                        </a>
-                    </h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="footer">
-            <div class="row">
-                <div class="col-12">
-                    <footer>
-                        <p>Offered on behalf ExtraHop Networks</p>
-                        <p>If you'd prefer not to receive future messages, you can <a href="#">unsubscribe here.</a></p>
-                        <p>424 Washington St, #35091, Brighton, MA 02135.</p>
-                    </footer>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+        <h3>
+          <a
+            class="btn"
+            href="./Network Detection and Response Cloud Security's Missing Link (1).pdf"
+            >Download Now
+          </a>
+        </h3>
+      </section>
 
+      <!--Footer section-->
+      <footer>
+        <p>Offered on behalf ExtraHop Networks</p>
+        <p>
+          If you'd prefer not to receive future messages, you can
+          <a class="btn" href="#">unsubscribe here.</a>
+        </p>
+        <p>424 Washington St, #35091, Brighton, MA 02135.</p>
+      </footer>
+      <!--End of container-->
+    </div>
+  </body>
 </html>
